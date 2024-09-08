@@ -10,7 +10,7 @@ namespace CCMS.Controllers
             return View();
         }
 
-        // Load the claim tracking page
+     
         public IActionResult TrackClaim()
         {
             return View();
