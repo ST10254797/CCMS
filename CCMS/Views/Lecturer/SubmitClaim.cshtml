@@ -1,0 +1,53 @@
+﻿@* Views/Lecturer/SubmitClaim.cshtml *@
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Submit Claim</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title mb-3">Claim Details</h5>
+
+            <form enctype="multipart/form-data">
+                <!-- Enable file uploads -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group mb-3">
+                            <label for="totalHoursWorked">Total Hours Worked:</label>
+                            <input type="number" class="form-control" id="totalHoursWorked" name="TotalHoursWorked" value="40" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group mb-3">
+                            <label for="hourlyRate">Hourly Rate:</label>
+                            <input type="number" class="form-control" id="hourlyRate" name="HourlyRate" value="25" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group mb-3">
+                            <label for="claimAmount">Claim Amount:</label>
+                            <input type="number" class="form-control" id="claimAmount" name="ClaimAmount" value="1000" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <!-- File Upload Section -->
+                <h5 class="card-title mb-3">Supporting Documents</h5>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group mb-3">
+                            <label for="claimDocuments">Upload Supporting Documents:</label>
+                            <input type="file" class="form-control" id="claimDocuments" name="ClaimDocuments" multiple>
+                            <small class="form-text text-muted">You can upload multiple files (e.g., PDFs, images) as proof of claim.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary" disabled>Submit Claim</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

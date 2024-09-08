@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container text-center my-5">
+    <div class="card shadow-lg bg-light border-light">
+        <div class="card-body p-5">
+            <h1 class="display-4 mb-4">Welcome to CCMS</h1>
+            <p class="lead mb-4">Empowering Independent Contractors with seamless claim submission and management.</p>
+            <p class="mb-5">Discover the features of our platform and streamline your administrative tasks with ease.</p>
+
+            <!-- Call to Action buttons -->
+            <a class="btn btn-primary btn-lg mb-4 me-2" href="@Url.Action("Login", "Account")" role="button">Log In</a>
+            <a class="btn btn-secondary btn-lg mb-4" href="@Url.Action("SubmitClaim", "Lecturer")" role="button">Submit a Claim</a>
+
+            <!-- Feature highlights -->
+            <div class="row text-left mt-5">
+                <div class="col-md-4">
+                    <i class="bi bi-file-earmark-text h1"></i>
+                    <h5 class="mt-3">Easy Claim Submission</h5>
+                    <p>Submit your monthly claims quickly and easily, with support for document uploads.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-check-circle h1"></i>
+                    <h5 class="mt-3">Efficient Approvals</h5>
+                    <p>Programme Coordinators and Academic Managers can review and approve claims with just a few clicks.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-graph-up h1"></i>
+                    <h5 class="mt-3">Track Claim Status</h5>
+                    <p>Track the status of your claims and ensure everything is processed on time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
