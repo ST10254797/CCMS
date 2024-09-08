@@ -27,7 +27,7 @@ namespace CCMS.Controllers
             // If login fails, show the login page again
             ViewBag.Error = "Invalid credentials";
             return View();
-        
+        }   
 
         // GET: /Account/Logout
         public IActionResult Logout()
